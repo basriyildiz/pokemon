@@ -44,7 +44,7 @@ class _PokemonListState extends State<PokemonList> {
         child: OrientationBuilder(
           builder: (context, orientation) {
             if (orientation == Orientation.portrait) {
-              return FutureBuilder(
+              return FutureBuilder( 
                 future: veri,
                 builder: (context, AsyncSnapshot<Pokedex> snapshot) {
                   if (snapshot.connectionState == ConnectionState.waiting) {
